@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>雪梨作业</title>
+		<style type="text/css">
+	* {
+    			padding: 0;
+   				 margin: 0;
+		}
+
+		a {
+   			text-decoration: none;
+   		}
+   		ul {
+    		list-style-type: none;
+		}
+
+/*清除浮动*/
+		.clear:after {
+   			content: '';
+    		display: block;
+    		height: 0;
+    		clear: both;
+		}
+		a:hover {
+			color: orange;
+			font-size: 20px;
+			border-bottom: 3px solid #FFCC00;
+			padding-bottom: 10px;
+		}
+		.box {
+			width: 1500px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.header-top {
+   			 height: 32px;
+    		border-bottom: 1px solid rgba(218, 218, 218, 1);
+		}
+
+		.header__info {
+   		line-height: 32px;
+		}
+
+		.header__info li {
+    		float: left;
+   			 margin-left: 27px;
+   				background: no-repeat left center;
+		}
+
+		li.iphone {
+   			 padding-left: 15px;
+    		background-image: url(img/iphone.png);
+		}
+
+		li.weixin {
+    		padding-left: 23px;
+   			 background-image: url(img/weixin.png);
+		}
+
+		 .top {
+		 	width: 1500px;
+		 	height: 150px;
+		 	background: url(img/banner.jpg)  center center;
+		 	cursor: pointer;
+		
+
+		 }
+
+		 .lefttop {
+		 	width: 350px;
+		 	height: 100px;
+		 	margin-top: 20px;
+		 	margin-left: 20px;
+		 	
+		 /*	position: relative;*/
+
+		 }
+		 .logo {
+		 	width: 100px;
+		 	height: 100px;
+		 	float: left;
+		/* 	position: relative;*/
+		 }
+		 .tupian2 {
+		 	width: 100px;
+		 	height: 100px;
+		 }
+		 .chuangyi {
+		 	font-family:Georgia;
+		 	font-size: 50px;
+		 	color: yellow;
+		 }
+
+
+		 .timu {
+		 	width: 250px;
+		 	height: 50px;
+		 	margin-top: 20px;
+		 	float: left;
+		 }
+		 .fl {
+		 	float: left;
+		 }
+		 .righttop {
+		 	width: 1100px;
+		 	height: 100px;
+		 	margin-top: 20px;
+		 	margin-right: 20px;
+		 /*	position:relative ;*/
+		 	
+		 	float: right;
+		 }
+		 .sousuo {
+		 	width: 500px;
+		 	height:100px ;
+		 	float: left;
+		 	
+
+		 }
+		 .form {
+		 	width: 300px;
+		 	height: 100px;
+		 	margin-left: 20px;
+		 	
+		 	float: left;
+		
+
+		 }
+		 .submit {
+		 	width: 80px;
+		 	height: 100px;	
+		 	float: left;
+		 	margin-left: 20px;
+		 	
+
+		 }
+		 .kuang {
+		 	width: 500px;
+		 	height: 60px;
+		 	margin-top: 20px;
+		 	
+		 /*	position: absolute;*/
+		 }
+
+		 .search {
+		 	width: 400px;
+		 	height: 60px;
+		 	float: left;
+		 	position: relative;
+		 	border: 1px solid rgba(208, 61, 61, 1);
+		 	border-width:5px;
+		 }
+		 
+		 .anniu1 {
+		 	width: 60px;
+		 	height: 70px;
+		 	float: right;
+		 	background: blue;
+    		position: relative;
+    		border: 1px solid rgba(208, 61, 61, 1);
+    		border-width:5px;
+		 }
+
+		 .kuang2 {
+		 	width: 300px;
+		 	height: 45px;
+		 	
+
+
+		 }
+		  .kuang3 {
+		 	width: 300px;
+		 	height: 45px;
+		 	margin-top: 10px;
+		 	
+		 }
+		.search1 {
+		 	width: 300px;
+		 	height: 40px;
+		 	border: 1px solid rgba(208, 61, 61, 1);
+		 	border-width:3px;
+		 }
+		 .zhanghao1 {
+		 	width: 80px;
+		 	height: 40px;
+		 	
+		 }
+		 .mima1 {
+		 	width: 80px;
+		 	height: 40px;
+		 	margin-top: 15px;
+
+		 		
+		 }
+		 .submit2 {
+		 	width: 80px;
+		 	height: 40px;
+		 }
+		 .zhanghao5 {
+		 	font-size: 18px;
+		 	padding: 10px;
+		 }
+		.daohang{
+		 	width: 100%;
+		 	height: 40px;
+		 	background: #F5F5F5;
+		 	border: 1px solid #E5E5E5	;
+		 	background: pink;
+		 }
+
+		.leftdao {
+		 	width:100px;
+		 	height: 40px;
+			
+		 	position: absolute; 
+		 }
+		.daohangzi {
+			padding-left: 15px;
+			padding-top: 5px;
+			font-family: "Times New Roman";
+			font-size: 25px;
+			color: black;
+			border-width: 3px;
+			border-right: 2px solid 	#6495ED;
+		}
+		.daohangbiao {
+			height: 40px;
+			
+			margin-left: 70px;
+			padding-left: 30px;
+			padding-right: 30px;
+			float: left;
+			border-right: 2px solid 	#6495ED;
+		}
+		.daohangbiao2 {
+			height: 40px;
+		
+			margin-left: 70px;
+			padding-left: 30px;
+			padding-right: 30px;
+			float: left;
+			border-right: 0px 
+		}
+		.zi {
+			margin: 10px;
+			color: black;
+
+		}
+
+		.rightdao {
+			width: 1500px;
+			height: 40px;
+			float: left;
+			margin-left: 150px;
+			margin-top: 0px;
+			
+			position: relative;
+		}
+		 
+		 .dachatu {
+		 	width: 100%;
+		 	height: 400px;
+		 	background:  #c0c0c0;
+		 	cursor: pointer;
+
+		 }
+		 .wenzi {
+		 	width: 500px;
+		 	height: 50px;
+		 	
+		 	padding-top: 30px;
+		 	margin-left: 200px;
+	
+		 }
+		 .chuangyi2 {
+		 	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size: 50px;
+		 	color: #FFA500;
+		 }
+		 .chuangyi3 {
+		 	 font-family:Arial, Helvetica, sans-serif; 
+      		font-size:30px;
+      		color:	#98FB98;
+
+		 }
+		 .json{
+			width: 100px;
+			height: 100px;
+			margin-top: 50px;
+			margin-left: 200px;
+			background:url(img/anniu.jpg) no-repeat center;
+			float: left;
+			color: green;
+		}
+		 .jspicture{
+			width: 700px;
+			height:100% ;
+			/*margin: 0 auto;*/
+			background-color: red;
+			margin-left: 100px;
+			float: left;
+		}
+		
+		.jsup{
+			height: 100px;
+			margin-top: 50px;
+			width: 100px;
+			margin-left: 100px;
+			margin-right: 100px;
+			background:url(img/anniu.jpg) no-repeat center;
+			float: left;
+			color: green;
+		}
+		 .submit4 {
+		 	width: 100px;
+		 	height: 50px;
+		 	font-size: 20px;
+		 	color: yellow;
+		 	background: black url(zuoye/anniu.jpg) no-repeat center center;
+		 }
+
+		
+		 .middle {
+		 	width: 100%;
+		 	height: 730px;
+		 	
+
+		 }
+		 .shoumai {
+		 	font-size: 25px;
+		 	font-family:Arial,Helvetica,sans-serif;
+       		color:black;
+       		
+		 }
+		 .biaoti {
+		 	width: 100%;
+		 	height: 30px;
+		 	background: pink;
+		 }
+		 .chahua {
+		 	width: 380px;
+		 	height: 300px;
+		 	background: pink;
+		 	float: left;
+		 	margin: 30px;
+		 	margin-left: 70px;
+
+
+		 }
+		 .xiaotu {
+		 	width: 380px;
+		 	height: 250px;
+		 	background: red;
+		 }
+		 .tupian1 {
+		 	width: 380px;
+		 	height: 250px;
+		 }
+		 .goumai {
+		 	width: 70px;
+		 	height: 20px;
+		 	
+		 }
+		 .goumaianniu {
+		 	width: 80px;
+		 	height: 23px;
+		 	margin-top: 0px;
+		 	float: right;
+		 	position: relative;
+		 	font-size: 15px;
+
+		 	
+		 }
+		 
+		 .gong {
+		 	width: 100%;
+		 	height: 400px;
+		 
+		 }
+		 .tupianjieshao {
+
+			font-family:Arial,Helvetica,sans-serif;font-size:100%;
+
+			
+
+		 }
+		 .jiege {
+		 	font-size: 20px;
+		 	color: yellow;
+		 }
+
+		 .jieshao {
+		 	width: 100%;
+		 	height: 30px;
+		 	background: pink;
+		 }
+		 .zuozhejieshoa {
+		 	font-size: 25px;
+		 	font-family:Arial,Helvetica,sans-serif;
+		 	margin-top: 0px;
+       		color:black;
+       		/*float: left;*/
+       		position: absolute;
+       		
+       		/*font-weight:bold;*/
+		 }
+		 .zuozhe1 {
+		 	width: 380px;
+		 	height: 390px;
+		 	background: url(img/zuozhe.jpg) no-repeat center;
+		 	float: left;
+		 	margin: 5px;
+		 	margin-left: 250px;
+		 	position: relative;
+
+		 }
+		 .zuozhe2 {
+		 	width: 380px;
+		 	height: 390px;
+		 	background: url(img/zuozhe2.jpg) no-repeat center;
+		 	float: left;
+		 	margin: 5px;
+		 	margin-left: 250px;
+		 	position: relative;
+
+		 }
+		.a {
+			background-color: rgba(0,0,0,0.4);
+			font-size: 20px;
+			color: #fff;
+			height: 150px;
+			width: 380px;
+			text-indent: 38px;
+			line-height: 35px;
+			position: absolute;
+			bottom: 0;
+		}
+		.a1 {
+			background-color: rgba(0,0,0,0.4);
+			font-size: 20px;
+			color: yellow;
+			height: 150px;
+			width: 380px;
+			text-indent: 38px;
+			line-height: 35px;
+			position: absolute;
+			bottom: 0;
+		}
+		.bottom{
+      		height: 250px;
+      		width: 100%;
+      		margin-top: 130px;
+      		margin: 0 auto;
+      		background-color: pink;
+    	}
+		
+		.zuihou {
+		 	width: 100%;
+		 	margin: 0  auto;
+		 	background: pink;
+		 }
+		 .xuelizaixian {
+      		margin-top:65px;
+      		margin-left: 50px;
+      		position: absolute;
+      		font-size: 36px;
+     		 font-weight: 400;
+      		font-family: Microsoft YaHei;
+      		color: rgba(0,164,255,1);
+   		 }
+    	.tuixiao {
+      		margin-top: 150px;
+      		margin-left: 50px;
+      		position: absolute;
+      		font-size: 12px;
+      		font-weight: 400;
+      		font-family: Sim Sun;
+      		color: rgba(102,102,102,1);
+    	}
+		  .xiazaiapp {
+      		height: 36px;
+     		 width: 120px;
+      		margin-top: 205px;
+      		margin-left: 50px;
+      		text-align: center;
+      		position: absolute;
+      		line-height: 36px;
+      		border: 1px solid #00A4FF;
+   		 }
+    	.xiazaiapp>a {
+      		font-size: 16px;
+      		font-weight: 400;
+     		 font-family: Microsoft YaHei;
+      		color: #00A4FF;
+    		}
+		 
+    	.xue {
+      		margin-top: 60px;
+      		margin-left: 666px;
+      		position: absolute;
+    	}
+     
+        .lin {
+      		font-size: 16px;
+     		font-weight: 400;
+      		font-family: Microsoft YaHei;
+      		color: rgba(51,51,51,1);
+    	}
+    	.xueli >.song {
+      		font-size: 12px;
+      		font-weight: 400;
+      		font-family: Sim Sun;
+      		color: rgba(51,51,51,1);
+      		padding: 8px;
+    	}
+       .ya {
+     		 margin-top: 60px;
+     		 margin-left: 990px;
+      		position: absolute;
+   		 }
+    	.zhinan {
+      		margin-top: 14px;
+    	}
+    	.xinshou {
+      		font-size: 16px	;
+      		font-weight: 400;
+     		 font-family: Microsoft YaHei;
+      		color: rgba(51,51,51,1);
+    	}
+    	.zhi {
+      		font-size: 12px;
+      		font-weight: 400;
+      		font-family: Sim Sun;
+      		color: rgba(51,51,51,1);
+     		 padding: 8px;
+    	}
+    	.hezuo{
+      		margin-top: 90px;
+     		 margin-left: 1290px;
+      		position: absolute;
+    	}
+   		
+       .yuz {
+     	 font-size: 16px;
+      	font-weight: 400;
+      	font-family: Microsoft YaHei;
+      	color: rgba(51,51,51,1);
+   	 	}
+   		.l5 {
+      		font-size: 12px;
+     		 font-weight: 400;
+   		   	font-family: Sim Sun;
+     		 color: rgba(51,51,51,1);
+     		 padding: 8px;
+     		}
+		
+		 .shengming {
+			width: 100%;
+			height: 70px;
+			position: relative;
+			background-color: #000000;
+		}
+		.shengming  p{
+			font-size: 15px;
+			color: #fff;
+			text-align: center;
+			line-height: 60px;
+
+		}
+		#jslogin{
+			width: 100%;
+			height:600px;
+			display: none;
+		}
+		#jsbig{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		#jstu1{
+			margin-top: 100px;
+			width: 400px;
+			height: 300px;
+			position: absolute;			
+			left: 0px;
+		}
+		
+		 </style>
+		
+		
+		
+		
+		</head>
+
+	<body style="overflow:-Scroll;overflow-x:hidden" >
+		<div id="jslogin">
+			<div id="jstu1"><img src="img/wait.jpg" width="100%" height="100%"></div>
+		</div>
+		<div id="jsbig">
+			<div class="header-top">
+            <div class="container">
+                <ul class="header__info fr">
+                    <li>登陆/注册</li>
+                    <li class="iphone">移动客户端</li>
+                    <li class="weixin">微信</li>
+                </ul>
+            </div>
+      </div>
+	<div class="box">
+		<div class="top">
+			
+			<div class="lefttop fl clear">
+				<div class="logo clear">
+					<img src="img/logo.jpg" alt="logo"  class="tupian2"/>
+				</div>
+				<div class="timu">
+					<p class="chuangyi">创意插画馆</p>
+				</div>
+			</div>
+			<div class="righttop clear">
+				<ul>
+					<li>
+						<div class="sousuo clear">
+							<div class="kuang">
+								<form >
+                				<input type="text" placeholder="输入关键字" class="search clear" />
+            					</form>
+            					<form>
+            						<input type="button" value="🔍" class="anniu1" />
+            					</form>
+							</div>
+
+				
+						</div>
+					</li>
+					<li>
+						<div class="form">
+							<div class="kuang2">
+								<div class="zhanghao">
+								<form >
+                				<input type="text"  class="search1 clear" placeholder="请输入用户名" id="jsls" onclick="appear2()"/>
+            					</form></div>
+							</div>
+							<div class="kuang3">
+								<div class="mima">
+								<form >
+                				<input type="text" placeholder="请输入密码" class="search1 clear" id="jspass" onclick="appear3()"/>
+            					</form>
+								</div>
+							</div>
+				
+						</div>
+					</li>
+					<li>
+						<div class="submit clear">
+							<div class="zhanghao1"><p class="zhanghao5">账号</p></div>
+							<div class="mima1">
+								<form>
+									<input type="button" value="登录"class="submit2" />
+								</form>
+
+							</div>
+						</div>
+					</li>	
+				</ul>
+			</div>	
+
+		</div>
+		<div class="daohang">
+			
+			<ul>
+				<li><div class	="leftdao clear"><p class="daohangzi">导航</p></div></li>
+				<li><div class="rightdao clear">
+					<ul>
+						<li class="daohangbiao clear"><a href="#"  target="_blank"><p class="zi">Subscribe</p></a></li>
+						<li class="daohangbiao  clear"><a href="#"  target="_blank"><p class="zi">Shop</p></a></li>
+						<li class="daohangbiao  clear"><a href="#"  target="_blank"><p class="zi">Bundles</p></a></li>
+						<li class="daohangbiao clear"><a href="#"  target="_blank"><p class="zi">Editorial</p></a></li>
+						<li class="daohangbiao clear"><a href="#"  target="_blank"><p class="zi">Contact</p></a></li>
+						<li class="daohangbiao2 clear"><a href="#"  target="_blank"><p class="zi">About</p></a></li>
+					</ul>
+				</div></li>
+			</ul>
+
+		</div>
+		
+		<div class="dachatu">
+			<input type="button" value="上一页" class="json" id="json">
+			<div class="jspicture">
+				<img id="img" src="img/pic1.jpg" width="100%" height="100%"/>
+			</div>
+			<input type="button" value="下一页" class="jsup" id="jsup" />
+			
+		</div>
+		<div class="middle">
+			<div class="biaoti"><p class="shoumai">插画售卖</p></div>
+			<ul>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu1.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span> 
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()" />
+					</form></span>
+					</p>
+				</div></li>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu2.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span>
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()" />
+					</form></span>
+					</p>
+				</div></li>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu3.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span>
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()" />
+					</form></span>
+					</p>
+				</div></li>
+			</ul>
+			<ul>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu4.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span>
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()" />
+					</form></span>
+					</p>
+				</div></li>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu5.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span>
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()"/>
+					</form></span>
+					</p>
+				</div></li>
+				<li><div class="chahua clear">
+					<div class="xiaotu"><img src="img/tu6.jpg" class="tupian1"/></div>
+					<p class="tupianjieshao"><span class="jiege">80￥</span>
+					<span class="goumai clear">
+					<form>
+						<input type="button" value="购买" class="goumaianniu" onclick="jump()"/>
+					</form></span>
+					</p>
+				</div></li>
+			</ul>
+			</div>
+		<div class="jieshao">
+			<p class="zuozhejieshoa clear">作者介绍</p>
+		</div>
+		<div class="gong">
+			<ul>
+				<li><div class="zuozhe1 clear">
+					<p class="a">Life is like angry birds.There are always several pigs laughing when you lose.</p>
+					</div>
+				
+				</li>
+				<li><div class="zuozhe2 clear">
+					<p class="a1">不管前方的路有多苦,只要走的方向正确,不管多么崎岖不平,都比站在原地更接近幸福--宫崎骏</p>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="bottom">
+			<div class="zuihou">
+				 <p class="xuelizaixian">创意插画馆</p>
+      			 <p class="tuixiao">愿插画温暖你的心</p>
+      			<div class="xiazaiapp">
+       			 <a href="#">下载APP</a>
+      			</div>
+      			<div class="xue">
+       			 <p class="lin">关于创意插画</p>
+       			 <ul class="xueli">
+          			<li class="song">
+          				 <a href="#">关于</a>
+         			 </li>
+         			 <li class="song">
+            			<a href="#">管理团队</a>
+         			 </li>
+         			 <li class="song">
+            			<a href="#">工作机会</a>
+         			 </li>
+         			 <li class="song">
+           				 <a href="#">客户服务</a>
+          			</li>
+         			 <li class="song">
+            			<a href="#">帮助</a>
+          			</li>
+        		</ul>
+      			</div>
+      			<div class="ya">
+        			<p class="xinshou">新手指南</p>
+        			<ul class="zhinan">
+          				<li class="zhi">
+            			<a href="#">如何注册</a>
+         				</li>
+          				<li class="zhi">
+            			<a href="#">如何购买</a>
+          				</li>
+          				<li class="zhi">
+           			 	<a href="#">如何加入购物车</a>
+          				</li>
+          		
+       				</ul>
+      			</div>
+      			<div class="hezuo">
+       			 	<p class="yuz">合作伙伴</p>
+     	  			 <ul class="zuiyou">
+        		  	<li class="l5">
+            			<a href="#">合作机构</a>
+         		 	</li>
+          			<li class="l5">
+           			 	<a href="#">合作画家</a>
+         		 	</li>
+        			</ul>
+      			</div>
+    		
+			</div>
+			
+		</div>
+		<div class="shengming"><p>小松8号、2020版权所有</p></div>
+	</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var jslogin = document.getElementById("jslogin");
+		var jsbig = document.getElementById("jsbig");
+		var num = 5;
+		var setIntervalId;
+		var jstu1 = document.getElementById("jstu1");
+		//图片移动
+		function getStyle(obj,style) {  
+			if(obj.currentStyle) 
+			{  
+			    return obj.currentStyle[style];  
+			} 
+			else 
+			{  
+			    return getComputedStyle(obj)[style];  
+			}  
+	}
+		//画面切换
+		function appear(){
+			jslogin.style.display = "none";
+			jsbig.style.display = "block";
+		}
+		window.onload=function(){
+			var timer =setInterval(function(){
+			var now = parseInt(getStyle(jstu1,"left"));
+			if(now == 1200){
+				clearInterval(timer);
+			}
+			else{
+				jstu1.style.left=now+5+"px";
+			}
+			
+		},30);
+			jslogin.style.display = "block";
+			jsbig.style.display = "none";
+
+			setIntervalId = setInterval(function(){
+				if(num == 0){
+					clearInterval(setIntervalId);
+					appear();
+				}
+				num = num -1;
+				console.log(num);
+			},1000)
+
+		}
+		//注册框特效
+		function appear2(){
+    		var item = document.getElementById("jsls"); 
+    		jsls.setAttribute("placeholder", "用户名不可重复")
+        }
+        function appear3(){
+        	var pass = document.getElementById("jspass");
+        	pass.setAttribute("placeholder","密码区分大小写");
+        }
+        //图片翻页
+		var imgName=Array("pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg") 
+		var foot = 0;
+		var img=document.getElementById("img")
+		document.getElementById("json").onclick=function(){
+			foot++;
+			if(foot > imgName.length-1){
+				foot = 0;
+			}
+			img.src = "img/"+imgName[foot];
+		};
+		document.getElementById("jsup").onclick=function(){
+			foot--;
+			if(foot<0){
+				foot = imgName.length-1;
+			}
+			img.src = "img/" + imgName[foot];
+		};
+		 function jump(){
+			alert("请先登录！");
+		}
+	</script>
+	</html>
